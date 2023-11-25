@@ -2,7 +2,41 @@
   width: 200px;
   height: 150px;
   background-color: teal;
-
   border-radius: 5px;
   overflow: hidden;
 }
+
+/* декоративний оверлей */
+.box{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-color: rgb(159, 95, 220);
+
+  overflow: hidden;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: aqua;
+
+  transform: translateX(-100%);
+
+transition: transform 250ms ease-in-out;
+}
+
+.box:hover
+.overlay{
+  transform: translateX(0);
+}
+
+p{
+  text-align: center;
+}
+
+
